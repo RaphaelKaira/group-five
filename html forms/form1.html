@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
     <head>
         <meta charset="UTF-8">
-        <meta name="author" description="Sharon Naliaka">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="content" description="A form to submit my comments">
-       
        <title>FORM</title>
       
     </head>
@@ -12,42 +11,48 @@
         <h1>Form to submit My Comments</h1>
         
             <form>
-                <fieldset>
+
+                <!-- personal details area -->
                 <fieldset>
                     <legend>Personal Details</legend>
-                    <label for="Name">Name</label>
+                    
+                    <label for="Name">Name:</label>
                     <input type="text" id="name" name="name">
+                    <br> 
                     <br>
-                    <p></p>
-                    <label for="email">Email Address</label>
+                    
+                    <label for="email">Email Address:</label>
                     <input type="email" id="email" name="email">
-                    <br>
-                    <p></p>
-                    <p>Gender
+                    <br><br>
+
+
+                    <span>Gender:</span>
                     <input type="radio"name="gender" id="male">
                     <label for="male">Male</label>
                     <input type="radio" name="gender" id="female">
                     <label for="female">Female</label>
-                    </p>
-                    <p>
-                        <label for="age">Age</label>
-                        <select name="age" id="age">
-                            <option value="under 18">Under 18</option>
-                            <option value="under 30" default >Under 30</option>
-                            <option value="under 60">Under 60</option>
-                            <option value="over 40">Over 40</option>
-                        </select>
-                    </p>
+                    <br><br>
+
+
+                    <label for="age">Age:</label>
+                    <select name="age" id="age">
+                        <option value="under 18">Under 18</option>
+                        <option value="under 30" default >Under 30</option>
+                        <option value="under 60">Under 60</option>
+                        <option value="over 40">Over 40</option>
+                    </select>
+                    <br><br>
                 </fieldset>
+
+                <!-- comments text field area -->
                 <fieldset>
                     <legend>Please Comment Here</legend>
-                    <p>Comments:</p>
-                    <textarea name="comment" id="" cols="20" rows="5"></textarea>
+                    <span>Comments:</span>
+                    <br>
+                    <textarea name="comment" cols="20" rows="2"></textarea>
                 </fieldset>
-                <p></p>
+                <br>
                 <button>Submit My Comments</button>
-            </fieldset>
-                
             
             </form>
         
